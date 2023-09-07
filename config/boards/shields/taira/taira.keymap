@@ -14,6 +14,7 @@
 #define RAISE   2
 #define ADJUST  3
 #define HYPER   4
+#define GAME    5
 
 #define HYPR(KC) LC(LS(LA(LG(KC))))
 
@@ -117,7 +118,7 @@
                         bindings = <
 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                                                          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
 &none        &none        &none        &none        &none        &none                                                                                 &none        &none        &none        &none        &none        &none
-&none        &none        &none        &none        &none        &none                                                                                 &none        &none        &none        &none        &none        &none
+&none        &none        &none        &none        &none        &tog GAME                                                                             &none        &none        &none        &none        &none        &none
 &none        &none        &none        &none        &none        &none                     &none       &none         &none       &none                 &none        &none        &none        &none        &none        &none
 &bt BT_CLR   &none        &none        &none                                     &none     &none       &trans        &trans      &none     &none                                 &none        &none        &none        &bt BT_CLR
                         >;
@@ -143,6 +144,16 @@
 &trans        &trans     &trans      &trans      &kp HYPR(F) &trans                                                                         &kp LEFT &kp DOWN   &kp UP      &kp RIGHT  &trans        &none
 &trans        &trans     &trans      &trans      &trans      &trans             &trans      &trans        &trans      &trans                &trans   &trans     &trans      &trans     &trans        &none
 &trans        &trans     &trans      &trans                           &trans    &kp HYPR(SPACE)       &trans        &trans      &trans    &trans                          &trans      &trans     &trans        &none
+                        >;
+                };
+
+                game_layer {
+                        bindings = <
+&kp  GRAVE    &kp  N1    &kp  N2     &kp  N3     &kp  N4    &kp  N5                                                                        &kp  N6  &kp  N7    &kp  N8     &kp  N9    &kp  N0       &kp  PSCRN
+&kp  TAB      &kp  Q     &kp  W      &kp  E      &kp  R     &kp  T                                                                         &kp  Y   &kp  U     &kp  I      &kp  O     &kp  P        &kp  BSLH
+&kp  ESC      &kp  A     &kp  S      &kp  D      &kp  F     &kp  G                                                                         &kp  H   &kp  J     &kp  K      &kp  L     &kp  SEMI     &kp  SQT
+&kp  LSHFT    &kp  Z     &kp  X      &kp  C      &kp  V     &kp  B             &kp  DEL    &kp  PG_DN    &kp  PG_UP  &kp  HOME             &kp  N   &kp  M     &kp  COMMA  &kp  DOT   &kp  SLASH    &kp  ENTER
+&kp  LCTRL    &kp LALT   &kp  LMETA  &kp  LALT                       &kp LMETA &kp  SPACE  &mo  LOWER    &mo  RAISE  &kp  BSPC &kp  RALT                       &kp  LEFT   &kp  DOWN  &kp  UP       &kp  RIGHT
                         >;
                 };
         };
