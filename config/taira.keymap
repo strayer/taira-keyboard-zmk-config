@@ -16,8 +16,6 @@
 #define HYPER   4
 #define GAME    5
 
-#define HYPR(KC) LC(LS(LA(LG(KC))))
-
 / {
 
         conditional_layers {
@@ -140,10 +138,10 @@
  */
                         bindings = <
 &trans        &trans     &trans      &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &kp HYPR(W) &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &trans      &trans      &kp HYPR(F) &trans                                                                         &kp LEFT &kp DOWN   &kp UP      &kp RIGHT  &trans        &none
+&trans        &trans     &kp LC(LS(LA(LG(W)))) &trans      &trans      &trans                                                                         &trans   &trans     &trans      &trans     &trans        &none
+&trans        &trans     &trans      &trans      &kp LC(LS(LA(LG(F)))) &trans                                                                         &kp LEFT &kp DOWN   &kp UP      &kp RIGHT  &trans        &none
 &trans        &trans     &trans      &trans      &trans      &trans             &trans      &trans        &trans      &trans                &trans   &trans     &trans      &trans     &trans        &none
-&trans        &trans     &trans      &trans                           &trans    &kp HYPR(SPACE)       &trans        &trans      &trans    &trans                          &trans      &trans     &trans        &none
+&trans        &trans     &trans      &trans                           &trans    &kp LC(LS(LA(LG(SPACE))))       &trans        &trans      &trans    &trans                          &trans      &trans     &trans        &none
                         >;
                 };
 
