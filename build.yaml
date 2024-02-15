@@ -17,3 +17,5 @@ include:
     shield: taira_left
   - board: nice_nano
     shield: taira_right
+  - board: nice_nano
+    shield: settings_reset
