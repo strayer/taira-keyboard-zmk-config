@@ -71,8 +71,8 @@
 &none          &kp  F1      &kp  F2      &kp  F3     &kp  F4     &kp  F5                                                                        &kp  F6    &kp  F7    &kp  F8     &kp  F9    &kp  F10      &kp  F11
 &kp  GRAVE     &kp  N1      &kp  N2      &kp  N3     &kp  N4     &kp  N5                                                                        &kp  N6    &kp  N7    &kp  N8     &kp  N9    &kp  N0       &kp  F12
 &kp  LS(GRAVE) &kp LS(N1)   &kp  LS(N2)  &kp  LS(N3) &kp  LS(N4) &kp  LS(N5)                                                                    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp  LS(N0)   &none
-&none          &kp EQUAL    &kp MINUS    &kp  LPAR   &kp  LBKT   &kp  LBRC          &none       &none         &none       &none                 &kp RBRC   &kp RBKT   &kp RPAR    &kp PLUS   &kp  UNDER    &none
-&trans         &trans       &trans       &trans                           &trans    &trans      &trans        &trans      &trans    &trans                            &trans      &trans     &trans        &trans
+&none          &kp EQUAL    &kp MINUS    &kp  LPAR   &kp  LBKT   &kp  LBRC          &kp C_VOL_UP       &none         &none       &none                 &kp RBRC   &kp RBKT   &kp RPAR    &kp PLUS   &kp  UNDER    &none
+&trans         &trans       &trans       &trans                           &kp C_MUTE    &kp C_VOL_DN      &trans        &trans      &trans    &trans                            &trans      &trans     &trans        &trans
                         >;
                 };
 
