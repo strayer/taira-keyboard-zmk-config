@@ -2,10 +2,11 @@ file_format: "1"
 id: taira
 name: Taira
 type: shield
-url: https://github.com/strayer/tairakb/
+url: https://github.com/strayer/taira-keyboard/
 requires: [pro_micro]
 features:
   - keys
+  - studio
 siblings:
   - taira_left
   - taira_right
